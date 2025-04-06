@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <a href="/">
+    <img src="logo.png" alt="Logo do Salão" class="logo-img" />
+  </a>
+  <button class="burger" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links" [class.active]="menuOpen">
+    <li><a routerLink="/inicio" (click)="fecharMenu()">Início</a></li>
+    <li><a routerLink="/studio" (click)="fecharMenu()">Studio</a></li>
+    <li><a routerLink="/servicos" (click)="fecharMenu()">Serviços</a></li>
+    <li><a routerLink="/loja" (click)="fecharMenu()">Loja</a></li>
+    <li><a routerLink="/feddback" (click)="fecharMenu()">Feddback</a></li>
+    <li><a routerLink="/agendamentos" (click)="fecharMenu()">Agendamentos</a></li>
+    <li><a routerLink="/admin" (click)="fecharMenu()">Administração</a></li>
+  </ul>
+</nav>

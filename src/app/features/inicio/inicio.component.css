@@ -1,0 +1,53 @@
+.card {
+  background-color: #2f2f2f; /* cinza escuro */
+  color: #ffffff; /* texto branco para contraste */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content p,
+.card-content .title {
+  color: #ffffff;
+}
+
+.bem-vindo,
+  .loja-section,
+  .servicos-section  {
+    background: linear-gradient(to right, #fff, #f8d4e3);
+    color: #000000;
+    padding: 4rem 1rem;
+  }
+
+  .feedback-section,
+  .agendamentos-section,
+  .sobre-section
+  {
+    background: linear-gradient(to left, #fff, #f8d4e3);
+    color: #333;
+    padding: 4rem 1rem;
+  }
+  
+  .section-divider-right {
+    height: 10px;
+    background: linear-gradient(to right, #ffd6e8, #8c1e47);
+
+  }
+
+  .section-divider-left {
+    height: 10px;
+    background: linear-gradient(to left, #ffd6e8, #8c1e47);
+
+  }
+
+  h1, h2 {
+    color: #8c1e47; /* rosa escuro */
+  }
+  
+  p {
+    color: #333333; /* cinza escuro */
+  }

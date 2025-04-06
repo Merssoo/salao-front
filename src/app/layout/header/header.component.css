@@ -1,0 +1,118 @@
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background:  rgba(140, 30, 71, 0.9);
+  padding: 10px 20px;
+  padding-top: 20px;
+}
+
+  
+  /* Logo */
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Links da navbar */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #654321;
+  }
+  
+  /* Botão Burger */
+  .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: -17px;
+  }
+  
+  .burger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-brand img {
+    height: 70px; /* Aumenta um pouco */
+    width: 100px;
+    max-width: 180px; /* Mantém um limite para evitar que fique exagerado */
+  }
+
+  .logo-img {
+    height: 270px;
+    width: 300px;
+    margin-top: -123px;
+    margin-left: 13px;
+  }
+  
+  
+  
+  /* Estilização para telas menores */
+  @media (max-width: 768px) {
+    .burger {
+      display: flex; 
+      margin-top: -57px;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background:  rgba(140, 30, 71, 0.9);
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+  
+    .navbar-brand img {
+      height: 50px; /* Um pouco maior para mobile */
+      max-width: 150px;
+    }
+    
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      height: 200px;
+      width: auto;
+      margin-top: -89px;
+      margin-left: -10px;
+    }
+  } 
