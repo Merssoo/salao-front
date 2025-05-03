@@ -1,0 +1,120 @@
+.studio-section {
+    background: linear-gradient(to right, #fff, #f8d4e3);
+    padding: 4rem 1rem;
+}
+
+.card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    position: relative; /* Necessário para posicionar o botão sobre a imagem */
+}
+
+.card {
+    background-color: #2f2f2f;
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.card-body p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    color: #000;
+}
+
+/* Botão para trocar a imagem */
+.change-image-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.change-image-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.image-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .image-nav button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .image-nav button:hover {
+    transform: scale(1.2);
+    color: #ffbfd8; /* rosa claro */
+  }
+  
+  .image-nav .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .card-estudio {
+    height: 300px; /* altura desejada */
+    max-height: 100%; /* opcional, para evitar estouro */
+  }
+
+  h1, h2 {
+    color: #8c1e47; /* rosa escuro */
+  }
+  
+  p {
+    color: #333333; /* cinza escuro */
+  }
+  
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .studio-section .col-md-4 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .card-estudio {
+        height: 200px; /* altura desejada */
+        max-height: 100%; /* opcional, para evitar estouro */
+      }
+}

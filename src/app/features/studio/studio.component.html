@@ -1,1 +1,114 @@
-<p>studio works!</p>
+<div class="studio-section">
+    <div class="container">
+        <div class="hero-body has-text-centered">
+            <h2 class="title">Conheça o nosso Estúdio</h2>
+            <p class="subtitle">Ambiente acolhedor, moderno e pensado para realçar sua beleza</p>
+          </div>
+      
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card w-100 d-flex flex-row overflow-hidden">
+            <div class="card-image w-50">
+              <img [src]="imageUrls[0]" alt="Espaço 1" class="img-fluid h-100">
+              <div class="image-nav">
+                <button (click)="changeImage(0, -1)">&lt;</button>
+                <span class="dot"></span>
+                <button (click)="changeImage(0, 1)">&gt;</button>
+              </div>   
+            </div>
+            <div class="card-body d-flex align-items-center justify-content-center bg-light text-dark w-50">
+              <p class="m-0 fw-bold">Vendemos produtos exclusivos para você se cuidar ainda mais.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card w-100 d-flex flex-row overflow-hidden">
+            <div class="card-body d-flex align-items-center justify-content-center bg-light text-dark w-50">
+                <p class="m-0 fw-bold">Conforto e atendimento personalizado para você.</p>
+            </div>
+            <div class="card-image w-50">
+              <img [src]="imageUrls[1]" alt="Espaço 2" class="img-fluid h-100">
+              <div class="image-nav">
+                <button (click)="changeImage(1, -1)">&lt;</button>
+                <span class="dot"></span>
+                <button (click)="changeImage(1, 1)">&gt;</button>
+              </div>   
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card w-100 d-flex flex-row overflow-hidden">
+            <div class="card-image w-50">
+              <img [src]="imageUrls[2]" alt="Espaço 3" class="img-fluid h-100">
+              <div class="image-nav">
+                <button (click)="changeImage(2, -1)">&lt;</button>
+                <span class="dot"></span>
+                <button (click)="changeImage(2, 1)">&gt;</button>
+              </div>   
+            </div>
+            <div class="card-body d-flex align-items-center justify-content-center bg-light text-dark w-50">
+                <p class="m-0 fw-bold">Arrumamos suas unhas com cuidado e carinho.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 5 -->
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="card w-100 d-flex flex-row overflow-hidden">
+            <div class="card-body d-flex align-items-center justify-content-center bg-light text-dark w-50">
+                <p class="m-0 fw-bold">Desfrute de um atendimento tranquilo e profissional.</p>
+            </div>
+            <div class="card-image w-50">
+              <img [src]="imageUrls[4]" alt="Espaço 5" class="img-fluid h-100">
+              <div class="image-nav">
+                <button (click)="changeImage(4, -1)">&lt;</button>
+                <span class="dot"></span>
+                <button (click)="changeImage(4, 1)">&gt;</button>
+              </div>   
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 6 -->
+        <div class="col-md-4 d-flex align-items-center">
+            <div class="card w-100 d-flex flex-row overflow-hidden">
+              <div class="card-image w-50"
+                   (touchstart)="onTouchStart($event)"
+                   (touchend)="onTouchEnd(5, $event)">
+                <img [src]="imageUrls[5]" alt="Espaço 6" class="img-fluid h-100">
+                <div class="image-nav">
+                  <button (click)="changeImage(5, -1)">&lt;</button>
+                  <span class="dot"></span>
+                  <button (click)="changeImage(5, 1)">&gt;</button>
+                </div>              
+              </div>
+              <div class="card-body d-flex align-items-center justify-content-center bg-light text-dark w-50">
+                <p class="m-0 fw-bold">Experiência única em cada atendimento.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex align-items-center">
+            <div class="card card-estudio w-100 d-flex flex-row overflow-hidden">
+              <div class="card-body d-flex align-items-center justify-content-center bg-light text-dark w-50">
+                <p class="m-0 fw-bold">Nosso estúdio foi cuidadosamente planejado para oferecer conforto e sofisticação em cada detalhe.
+                    Desde a recepção até as salas de atendimento, tudo é pensado para que sua experiência seja única.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-body has-text-centered">
+            <p class="subtitle">
+              
+            </p>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+  
