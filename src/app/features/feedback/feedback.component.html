@@ -1,1 +1,44 @@
-<p>feedback works!</p>
+<div class="container mt-6 pt-3">
+    <!-- Título principal -->
+    <div class="hero-body has-text-centered">
+      <h2 class="title">Feedback dos Clientes</h2>
+    </div>
+  
+    <!-- Cards de feedback -->
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 mb-4" *ngFor="let card of cards">
+        <div class="card custom-card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">{{ card.userName }}</h5>
+            <p class="card-text">{{ card.mesage }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Paginação -->
+    <div class="d-flex justify-content-center mt-3">
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+  
+    <!-- Formulário de novo feedback dentro de um card -->
+    <div class="card mt-5 custom-card shadow">
+      <div class="card-body">
+        <h4 class="card-title text-center mb-4">Deixe seu feedback</h4>
+  
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" class="row g-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" formControlName="userName" placeholder="Seu nome">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" formControlName="mesage" placeholder="Seu feedback">
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <button type="submit" class="btn btn-success mt-3 px-4">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+  </div>
+  

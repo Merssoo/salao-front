@@ -1,10 +1,16 @@
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
 }
 
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
+  background-color: #fff; /* Ou a cor de fundo clara que você estiver usando */
+  color: #000; /* Evita texto invisível em temas escuros */
 }
 
 .app-wrapper {
@@ -16,3 +22,10 @@ html, body {
 .main-content {
   flex: 1;
 }
+
+pagination-controls nav[aria-label="Pagination"] {
+  background-color: rgba(140, 30, 71, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+}
+

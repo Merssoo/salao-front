@@ -1,0 +1,62 @@
+/* Estilo para os cards */
+.custom-card {
+    background-color: #2f2f2f;  /* Cor de fundo do card */
+    color: #ffffff;            /* Cor do texto */
+    border-radius: 12px;       /* Borda arredondada */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra do card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.custom-card:hover {
+    transform: scale(1.03); /* Efeito de aumentar o card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Aumenta a sombra no hover */
+    z-index: 10; /* Eleva o card ao passar o mouse */
+}
+
+.card-body p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body {
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8; /* Cor do fundo do corpo do card */
+    color: #000;               /* Cor do texto no corpo do card */
+}
+.card-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para a borda do formulário */
+.card .form-control {
+    border-radius: 10px; /* Borda arredondada dos inputs */
+}
+
+/* Estilo do botão */
+.btn-success {
+    background-color: #8c1e47;  /* Cor de fundo do botão */
+    border-color: #8c1e47;      /* Cor da borda */
+    color: #fff;                /* Cor do texto */
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #ffbfd8;  /* Cor de fundo ao passar o mouse */
+    border-color: #ffbfd8;      /* Cor da borda ao passar o mouse */
+}
+
+h2 {
+    color: #8c1e47; /* rosa escuro */
+}
+  
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .studio-section .col-md-4 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
