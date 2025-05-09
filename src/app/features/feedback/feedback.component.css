@@ -5,6 +5,7 @@
     border-radius: 12px;       /* Borda arredondada */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra do card */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação ao passar o mouse */
+    font-family: 'Poppins', sans-serif; /* Adiciona a fonte aqui */
 }
 
 .custom-card:hover {
@@ -15,15 +16,21 @@
 
 .card-body p {
     margin: 0;
-    font-weight: bold;
     text-align: center;
+    color: #333333; 
+}
+
+
+.card .card-content {
+    margin-top: 10px;
+    padding: 2px;
+    border-radius: 0 0 2px 2px;
 }
 
 .card-body {
     align-items: center;
     justify-content: center;
-    background-color: #f8f8f8; /* Cor do fundo do corpo do card */
-    color: #000;               /* Cor do texto no corpo do card */
+    background-color: #f8f8f8; /* Cor do fundo do corpo do card */             /* Cor do texto no corpo do card */
 }
 .card-title{
     display: flex;
@@ -52,6 +59,10 @@
 h2 {
     color: #8c1e47; /* rosa escuro */
 }
+
+p {
+    color: #333333; /* cinza escuro */
+  }
   
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
